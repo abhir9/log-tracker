@@ -1,0 +1,19 @@
+{
+  "name": "file-uploader",
+  "version": "1.0.0",
+  "description": "An AJAX file uploader using JS and NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Fady Makram",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "formidable": "^1.0.17",
+    "jade": "^1.11.0",
+    "request": "^2.75.0",
+    "setimmediate": "^1.0.5"
+  }
+}
