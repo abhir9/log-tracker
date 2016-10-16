@@ -4,7 +4,7 @@ var path = require('path');
 var formidable = require('formidable');
 var fs = require('fs');
 var request = require('request');
-require("setimmediate"); 
+
 
 var globalfilepath;
 app.use(express.static(path.join(__dirname, 'public')));
@@ -146,6 +146,6 @@ else
   				});
 });
 
-var server = app.listen(3000, function() {
-    console.log('Server listening on port 3000');
+var server = app.listen(process.env.PORT || 5002, function() {
+    console.log('Server listening on port 5002');
 });

@@ -1,19 +1,27 @@
 {
-  "name": "file-uploader",
+  "name": "log-tracker",
   "version": "1.0.0",
-  "description": "An AJAX file uploader using JS and NodeJS",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
-  "author": "Fady Makram",
-  "license": "MIT",
+  "description": "Node.js app for log tracker",
+  "main": "server.js",
   "dependencies": {
-    "express": "^4.13.3",
+    "express": "^4.14.0",
     "formidable": "^1.0.17",
     "jade": "^1.11.0",
     "request": "^2.75.0",
     "setimmediate": "^1.0.5"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhir9/log-tracker.git"
+  },
+  "author": "abhimanyu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhir9/log-tracker/issues"
+  },
+  "homepage": "https://github.com/abhir9/log-tracker#readme"
 }
