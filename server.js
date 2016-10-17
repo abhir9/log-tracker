@@ -143,6 +143,8 @@ else
   				});
 });
 
-var server = app.listen(process.env.PORT || 5002, function() {
-    console.log('Server listening on port 5002');
+
+var port = Number(process.env.PORT || 3000);
+app.listen(port, function() {
+    console.log('Server listening on port'+port);
 });
