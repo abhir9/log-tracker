@@ -31,9 +31,7 @@ var globalfilepath;
 		
         fs.rename(file.path, path.join(form.uploadDir, file.name));
         globalfilepath = form.uploadDir + "\\" + file.name;
-		
-
-		
+			console.log("file uploading...........");
     });
 
     // log any errors that occur
@@ -48,7 +46,8 @@ var globalfilepath;
         //	   console.log("---",req)
     });
     form.on('end', function() {
-		res.send(globalfilepath);
+console.log("file uploaded..........");
+	res.send(globalfilepath);
     });
 
 
@@ -56,8 +55,6 @@ var globalfilepath;
 
 app.post('/output', function(req, res) {
 
-
-	
 	req.on('data', function (globalfilepath) {
 globalfilepath+="";
         console.log('GOT DATA!---'+globalfilepath);
