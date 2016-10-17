@@ -30,7 +30,7 @@ var globalfilepath;
     form.on('file', function(field, file) {
 		
         fs.rename(file.path, path.join(form.uploadDir, file.name));
-        globalfilepath = form.uploadDir + "\\" + file.name;
+        globalfilepath = form.uploadDir + "/" + file.name;
 			console.log("file uploading...........");
     });
 
@@ -53,7 +53,7 @@ console.log("file uploaded..........");
 
 });
 
-app.get('/demo', function(req, res) {
+app.get('/	', function(req, res) {
 
 console.log("came to output get");	
  res.send("yes hit it correctoly");
