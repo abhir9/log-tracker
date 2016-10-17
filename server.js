@@ -53,6 +53,12 @@ console.log("file uploaded..........");
 
 });
 
+app.get('/output', function(req, res) {
+
+console.log("came to output get");	
+
+}
+)
 app.post('/output', function(req, res) {
 
 	req.on('data', function (globalfilepath) {
@@ -62,7 +68,7 @@ globalfilepath+="";
 
 function getline(filename, line_no, callback) {
 	
-    fs.readFile(filename, function (err, data) {
+    fs.readFile(filename, function (err, data) {	
       if (err)
 		  console.log(err);
 			
