@@ -53,10 +53,10 @@ console.log("file uploaded..........");
 
 });
 
-app.get('/output', function(req, res) {
+app.get('/demo', function(req, res) {
 
 console.log("came to output get");	
-
+ res.send("yes hit it correctoly");
 }
 )
 app.post('/output', function(req, res) {
