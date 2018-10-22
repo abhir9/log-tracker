@@ -2,8 +2,6 @@ var http = require('http');
 var url = require('url');
 const goodreads = require('goodreads-api-node');
 let gr= goodreads({key:'dfhwnRPEi1XCgBuYc6QEjw',secret:'i84nNJpYO9DMLlMQYERhPZ5OES36AZbx0WeJQ1Ls'})
-process.env.PORT=4000;
-
 let server = http.createServer(function (request, response) {
 console.log('request starting...',request.url); 
  let urlParts = url.parse(request.url, true),
